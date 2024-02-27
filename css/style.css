@@ -1,182 +1,154 @@
+/* Reset CSS */
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
 body {
-  font-family: "Roboto", sans-serif;
-  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
 }
-/*navbar*/
+
+/* Header styles */
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+}
+
 nav {
   display: flex;
-  background-color: coral;
-  justify-content: space-around;
-  /* padding: 20px 0; atas bawah 20  kiri kanan 0 */
-  /* atur padding dengan flex */
-  height: 45px;
   align-items: center;
-  color: whitesmoke;
-}
-nav ul {
-  display: flex;
-  list-style: none;
-  width: 40%;
   justify-content: space-between;
-  transition: all 0.4s;
+  padding: 0 20px;
 }
-nav .logo {
-  font-family: "Srisakdi", cursive;
-  letter-spacing: 3px; /*space antar char*/
+
+.logo {
+  display: flex;
+}
+
+.logo img {
+  width: 60px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Add this line to center the navigation */
+  padding: 0 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  text-align: center;
+  margin: 0; /* Add this line to remove default margin */
+  padding: 0; /* Add this line to remove default padding */
+}
+
+nav ul li {
+  margin-left: 20px;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: white;
-  font-size: 0.9rem;
+  color: #333;
+  font-size: 1em;
+  text-align: center;
 }
 
 nav ul li a:hover {
-  color: teal;
-}
-  /* hamburger menu */
-  .menu-toggle{
-    display: none; 
-    flex-direction: column;
-    height: 17px;
-    justify-content: space-between;
-    position: relative;
- }
- .menu-toggle input{
-     position: absolute;
-     top:-5px;
-     left:-3px;
-     width:21px;
-     height: 21px;
-     opacity: 0;
-     cursor: pointer;
-     z-index: 2;
- }
- .menu-toggle span{
-     display: block;
-     width: 21px;
-     height: 2px;
-     background-color: whitesmoke;
-     border-radius: 3px;
-     transition: all 0.7s;
- }
-
-   /*x on hamburger menu*/
-   .menu-toggle span:nth-child(2){
-    transform-origin: left center;
-  }
-  
-  .menu-toggle span:nth-child(4){
-    transform-origin: left center;
-  }
-  
-  .menu-toggle input:checked ~ span:nth-child(2){
-    transform: rotate(45deg) ;
-  }
-  
-  .menu-toggle input:checked ~ span:nth-child(4){
-    transform: rotate(-45deg) ;
-  }
-  /* invis span ke 2 / child ke 3 */
-  .menu-toggle input:checked ~ span:nth-child(3){
-    width: 0%;
-    opacity: 0;
-    transition: .1s
-  }
-
-  .image {
-   
-    width: 100%;
-    height: auto;  
-    max-width: 140px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  color: #555;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-
-    border: 2px solid blue;
-    padding: 8px;
-    border-radius: 5px;
-    margin: 0 auto;
-
-}
 main {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  margin-top: 15px;
 }
 
-.box {
-    margin: 5px;
-    padding: 10px;
-    border-radius: 5px;
-}
-/* supaya ada jarak antar box  */
-.flexone{
-flex-grow: 1;
-}
-.flextwo{
-    flex-grow: 2;
-    }
-footer {
-    text-align: center;
-}
-h2 {
-  
-    text-align: center;
-    color: brown;
-    text-justify: inter-word;
-    word-wrap: break-word;
 
+
+.image {
+  width: 100%;
 }
-h5 {
+
+article {
+  text-align: justify;
+}
+
+article h1
+{
   text-align: center;
-  color: red;
-  word-wrap: break-word;
- 
+  margin-bottom: 5px;
 }
-p {
-    text-align: justify;
-    text-justify: inter-word;
+
+article p{
+  text-align: justify;
+  text-justify: inter-word;
+  margin-bottom: 5px;
 }
-@media screen and (max-width: 768px) {
-    nav ul{
-      width: 50%;
-    }
-  }
 
-  @media screen and (max-width: 576px) {
-   .menu-toggle{
-       display: flex;
-   }
-   main{
-       flex-direction: column-reverse;
-   }
-    nav ul{
-      position: absolute;
-      right:0;
-      top: 0;
-      width: 50%;
-      flex-direction: column;
-      height: 100vh;
-      justify-content:space-evenly;
-      align-items: center;
-      background-color: coral;
-      /* transform: translateX(100%);  */
-      transition: all 0.72s;
-      opacity: 0;
-      z-index: 2;
-    }
-    nav ul.menushow{
-        opacity: 0.5;
-        /* transform: translateX(0); */
-    }
-  }
+#home p
+{
+  text-align: center;
+}
 
+#hobi ul
+{
+  list-style-type: disc;
+}
+
+#kemampuan-teknis ul
+{
+  list-style-type: disc; 
+}
+
+.box2 article {
+  border: 2px solid #ccc; 
+  border-radius: 5px;
+  padding: 20px; 
+  margin-bottom: 20px; 
+}
+
+#moto-hidup p
+{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.video-container 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.iframe-container
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.image2
+{
+  width: 50px ;
+}
+
+.image3
+{
+  width: 50px;
+}
+
+footer {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px 0;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
