@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyek1 Nesta Rizkia Saputra</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- Import Library Jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="js/scraping.js"></script>
 </head>
 <body>
     <header>
@@ -15,23 +18,16 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#profil-diri">Profil Diri</a></li>
-                <li><a href="#moto-hidup">Moto Hidup</a></li>
-                <li><a href="#hobi">Hobi</a></li>
-                <li><a href="#kemampuan-teknis">Kemampuan Teknis</a></li>
-                <li><a href="#lesson-learned">Lesson Learned</a></li>
-                <li><a href="#harapan">Harapan</a></li>
                 <li><a href="#galeri">Galeri</a></li>
                 <li><a href="#video">Video</a></li>
                 <li><a href="#maps">Maps</a></li>
+                <li><a href="#Scraping_News">Scraping News</a></li>
             </ul>
         </nav>
     </header>
     
     <div class="container">
         <main>
-            <aside class="box1">
-                <img src="Image/Nesta.png" class="image" />
-            </aside>
             <div class="box2">
                 <article id="home">
                     <h1>Home</h1>
@@ -95,8 +91,14 @@
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.309474152619!2d107.56502177414218!3d-6.97276806827452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68efbed2e23b19%3A0x621029f772c2f346!2sCampus%20Unpredictable!5e0!3m2!1sid!2sid!4v1709042674222!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </article>
+                <div id="Scraping_News">
+                    <h1> Hasil Scraping dari Republika Online </h1>
+                    <h6> by Nesta Rizkia Saputra </h6>
+                    <div id="Data-Scraping"></div>
+                </div>
             </div>
         </main>
+        </div>
         <footer>
             <div>
                 <a href="https://www.linkedin.com/in/nesta-rizkia-saputra-21612b290/">
@@ -108,6 +110,6 @@
             </div>
         </footer>
     </div>
-    <script src="Js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
